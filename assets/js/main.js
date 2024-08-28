@@ -138,6 +138,8 @@ document
         console.log("SUCCESS!", response.status, response.text);
         // Muestra el mensaje de éxito
         document.querySelector(".sent-message").style.display = "block";
+        document.querySelector(".loading").classList.remove("d-block");
+        document.querySelector(".loading").style.display = "none !important";
       },
       function (error) {
         console.log("FAILED...", error);
